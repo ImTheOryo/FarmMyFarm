@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER" prefHeight="75.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <Label fx:id="goToField" alignment="CENTER" contentDisplay="CENTER" text="Champs">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="goToInventory" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="40.0" text="Inventaire">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>
