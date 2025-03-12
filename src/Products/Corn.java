@@ -12,14 +12,14 @@ import javafx.util.Duration;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Carrot extends Vegetables {
-    static Inventory inventory = new Inventory("Carotte", 0, "vegetable", 1);
+public class Corn extends Vegetables {
+    static Inventory inventory = new Inventory("Maïs", 0, "vegetable", 5);
     static Inventory_Controller inventory_controller = new Inventory_Controller();
-    private String name = "Carotte";
+    private String name = "Maïs";
     private int timeToGrow = 3;
-    final String [] statut = {".", "c", "C"};
-    final int MIN_QUANTITY_HARVEST = 2;
-    final int MAX_QUANTITY_HARVEST = 10;
+    private String [] statut = {".", "m", "M"};
+    final int MIN_QUANTITY_HARVEST = 1;
+    final int MAX_QUANTITY_HARVEST = 5;
     private int row;
     private int column;
     private GridPane gridPane;

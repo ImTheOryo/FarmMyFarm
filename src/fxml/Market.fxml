@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Market_Controller">
+   <children>
+      <TableView fx:id="inventoryTableVIew" layoutY="155.0" prefHeight="300.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="inventoryProduct" maxWidth="166.0" minWidth="166.0" prefWidth="166.0" text="Produits" />
+          <TableColumn fx:id="inventoryQuantity" maxWidth="166.0" minWidth="166.0" prefWidth="166.0" text="Quantité" />
+            <TableColumn fx:id="productSellPrice" maxWidth="166.0" minWidth="166.0" prefWidth="166.0" text="Prix unité" />
+        </columns>
+      </TableView>
+      <TableView fx:id="marketTableView" layoutX="500.0" layoutY="155.0" prefHeight="300.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="marketProduct" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Produits" />
+            <TableColumn fx:id="marketBuyPrice" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Prix" />
+         </columns>
+      </TableView>
+      <Label layoutX="135.0" layoutY="102.0" text="Votre inventaire">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="677.0" layoutY="102.0" text="Le marché">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sellQuantity" layoutX="148.0" layoutY="473.0" prefHeight="24.0" prefWidth="136.0" promptText="Quantité a vendre" />
+      <Button fx:id="sellButton" layoutX="288.0" layoutY="473.0" mnemonicParsing="false" text="Vendre" />
+      <TextField fx:id="buyQuantity" layoutX="640.0" layoutY="473.0" prefHeight="24.0" prefWidth="147.0" promptText="Quantité à acheter" />
+      <Button fx:id="buyButton" layoutX="791.0" layoutY="473.0" mnemonicParsing="false" text="Acheter" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="modalWhatToDo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Button fx:id="getProduction" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" text="Prendre la production" />
+      <Button fx:id="removeFromField" layoutX="228.0" layoutY="88.0" mnemonicParsing="false" text="Enlever du champ" />
+   </children>
+</AnchorPane>
